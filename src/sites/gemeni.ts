@@ -6,7 +6,7 @@ import {
 } from '../lib/dom';
 
 const LTR_ONLY_SELECTOR = '.katex-html, .not-prose, pre, code';
-const APPLY_DIRECTION_SELECTOR = '.ql-editor.textarea p';
+const APPLY_DIRECTION_SELECTOR = '.ql-editor.textarea p, table';
 
 function fixGemeniDirection(): void {
   applyDetectedDirection(

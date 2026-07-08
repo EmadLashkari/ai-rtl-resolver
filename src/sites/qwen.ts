@@ -9,7 +9,7 @@ const LTR_ONLY_SELECTOR =
   '.katex-html,.md-code-block,code,pre,table';
 
 const DIRECTION_TARGET_SELECTOR =
-  '.chat-user-message,.response-message-content,.message-input-container-area';
+  '.chat-user-message,.response-message-content,.message-input-container-area, table';
 
 function fixQwenDirection(): void {
   applyDetectedDirection(

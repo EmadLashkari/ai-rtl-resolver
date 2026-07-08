@@ -9,9 +9,9 @@ const LTR_ONLY_SELECTOR =
   '.katex-html,.md-code-block,code,.ds-virtual-list-items>div>div';
 
 const DIRECTION_TARGET_SELECTOR =
-  '.ds-markdown-paragraph, h2, h3, h4, .ds-message>div:not(.ds-markdown), ul, ol, table';
+  '.ds-markdown-paragraph, h2, h3, h4, .ds-message>div:not(.ds-markdown), ul, ol, table ';
 
-const VAZIR_CLASS_SELECTOR = '.ds-virtual-list-items>div>div, textarea';
+const VAZIR_CLASS_SELECTOR = '.ds-virtual-list-items>div>div, textarea, table span';
 
 const TEXTAREA_SELECTOR = 'textarea';
 

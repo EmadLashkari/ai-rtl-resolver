@@ -1,7 +1,7 @@
 import { applyDetectedDirection, getElementText, observeBodyMutations } from '../lib/dom';
 import { initKatexDirectionFix } from '../lib/katex';
 
-const APPLY_DIRECTION_SELECTOR = '#prompt-textarea, div[data-message-author-role="assistant"] p';
+const APPLY_DIRECTION_SELECTOR = '#prompt-textarea, div[data-message-author-role="assistant"] p, table';
 
 function applyDirectionToChatgpt(): void {
   applyDetectedDirection(

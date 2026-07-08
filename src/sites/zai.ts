@@ -1,7 +1,7 @@
 import { applyDetectedDirection, getElementText, observeBodyMutations } from '../lib/dom';
 import { initKatexDirectionFix } from '../lib/katex';
 
-const DIRECTION_TARGET_SELECTOR = '#chat-input,.chat-user [data-expanded], .markdown-prose:not(.chat-user)';
+const DIRECTION_TARGET_SELECTOR = '#chat-input,.chat-user [data-expanded], .markdown-prose:not(.chat-user), table';
 
 function fixZaiDirection(): void {
   applyDetectedDirection(
