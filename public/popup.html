@@ -15,53 +15,59 @@
       font-family: 'Vazirmatn', system-ui, sans-serif;
       background: #0f0f18;
       color: #ede9ff;
-      width: 300px;
-      padding: 16px;
+      width: 350px;
+      padding: 12px;
     }
     .header {
       display: flex;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 16px;
-      padding-bottom: 12px;
+      gap: 8px;
+      margin-bottom: 10px;
+      padding-bottom: 8px;
       border-bottom: 1px solid rgba(255,255,255,0.07);
     }
     .logo {
-      width: 32px;
-      height: 32px;
+      width: 24px;
+      height: 24px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 12px;
-      font-weight: 900;
-      color: #fff;
     }
-    .title { font-size: 14px; font-weight: 700; }
+    .title { font-size: 13px; font-weight: 700; }
+    .sites {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+    }
     .site-item {
       display: flex;
       align-items: center;
-      gap: 10px;
-      padding: 12px 14px;
+      gap: 6px;
+      padding: 6px 8px;
       background: #18182a;
       border: 1px solid rgba(255,255,255,0.07);
-      border-radius: 10px;
-      margin-bottom: 8px;
-    }
-    .site-item:last-child { margin-bottom: 0; }
-    .site-icon {
-      width: 28px;
-      height: 28px;
       border-radius: 6px;
+    }
+    .site-item:hover { border-color: rgba(255,255,255,0.15); }
+    .site-icon {
+      width: 18px;
+      height: 18px;
+      border-radius: 4px;
       object-fit: contain;
       flex-shrink: 0;
     }
-    .site-info { flex: 1; }
-    .site-name { font-size: 13px; font-weight: 700; }
-    .site-url { font-size: 11px; color: #9b96bc; font-family: monospace; }
+    .site-name {
+      flex: 1;
+      font-size: 11px;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
     .toggle {
       position: relative;
-      width: 40px;
-      height: 22px;
+      width: 28px;
+      height: 16px;
       cursor: pointer;
       flex-shrink: 0;
     }
@@ -70,39 +76,44 @@
       position: absolute;
       inset: 0;
       background: #54506e;
-      border-radius: 22px;
+      border-radius: 16px;
       transition: 0.2s;
     }
     .slider::before {
       content: '';
       position: absolute;
-      width: 16px;
-      height: 16px;
-      left: 3px;
-      bottom: 3px;
+      width: 12px;
+      height: 12px;
+      left: 2px;
+      bottom: 2px;
       background: #fff;
       border-radius: 50%;
       transition: 0.2s;
     }
     .toggle input:checked + .slider { background: #52d68a; }
-    .toggle input:checked + .slider::before { transform: translateX(18px); }
-    #links { margin-top: 15px;}
-    #links, #links a {text-align: center; color: #888; text-decoration: none;}
-    #links a:hover {color:#aaa}
+    .toggle input:checked + .slider::before { transform: translateX(12px); }
+
+    #links, #links a { font-size: 10px; color: #666; text-decoration: none; }
+    #links a:hover { color: #999; }
+    .footer { display: flex; justify-content: space-between; align-items: center; margin-top: 12px;}
+    .footer>span { font-size: 10px; color: #666}
   </style>
 </head>
 <body>
   <div class="header">
     <div class="logo">
-      <img src="https://raw.githubusercontent.com/miladniroee/ai-rtl-resolver/refs/heads/main/public/icons/icon-32.png" width="32" alt="Ai RTL Resolver">
+      <img src="https://raw.githubusercontent.com/miladniroee/ai-rtl-resolver/refs/heads/main/public/icons/icon-32.png" width="24" alt="Ai RTL Resolver">
     </div>
     <div class="title">AI RTL Resolver</div>
   </div>
-  <div id="sites"></div>
-  <div id="links">
-    <a href="https://miladniroee.github.io/ai-rtl-resolver">Homepage</a>
-    <span>&nbsp;&#9679;&nbsp;</span>
-    <a href="https://github.com/miladniroee/ai-rtl-resolver">Github</a>
+  <div id="sites" class="sites"></div>
+  <div class="footer">
+    <div id="links">
+      <a href="https://miladniroee.github.io/ai-rtl-resolver" target="_blank">Homepage</a>
+      <span>&nbsp;&#9679;&nbsp;</span>
+      <a href="https://github.com/miladniroee/ai-rtl-resolver" target="_blank">Github</a>
+    </div>
+    <span>By Milad Niroee</div>
   </div>
   <script src="popup.js"></script>
 </body>

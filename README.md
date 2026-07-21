@@ -5,7 +5,7 @@
 
 # Ai RTL Resolver
 
-A browser extension that fixes text direction for Persian, Arabic, and other RTL languages on ChatGPT, Claude, Deepseek, Gemeni, Qwen, z.ai, NotebookLM, and Duck.ai.
+A browser extension that fixes text direction for Persian, Arabic, and other RTL languages on ChatGPT, Claude, Deepseek, Gemeni, Qwen, z.ai, Gemini Notebook, Duck.ai, and Kimi.
 
 ![Extension Screenshot](screenshots/promo-marquee.png)
 
@@ -20,8 +20,9 @@ A browser extension that fixes text direction for Persian, Arabic, and other RTL
 | <img src="public/platforms/perplexity.png" width="20"> Perplexity | [perplexity.ai](perplexity.ai) |
 | <img src="public/platforms/qwen.png" width="20"> Qwen | [chat.qwen.ai](chat.qwen.ai) |
 | <img src="public/platforms/zai.png" width="20"> z.ai | [chat.z.ai](chat.z.ai) |
-| <img src="public/platforms/notebooklm%20.png" width="20"> NotebookLM | [notebooklm.google.com](notebooklm.google.com) |
+| <img src="public/platforms/notebooklm%20.png" width="20"> Gemini Notebook | [notebooklm.google.com](notebooklm.google.com) |
 | <img src="public/platforms/duckai.png" width="20"> Duck.ai | [duck.ai](duck.ai) |
+| <img src="public/platforms/kimi.png" width="20"> Kimi | [kimi.com](kimi.com) |
 
 ## Table of Contents
 - [Features](#features)
@@ -87,13 +88,14 @@ Source is written in TypeScript under `src/`. The build emits one self-contained
 
 | Version | Date | Changes |
 |---------|------|---------|
-| v5.0 | Current | Add per-site toggle, add z.ai, add NotebookLM, add Duck.ai |
+| v5.1 | Jul 2026 | Add Kimi support, redesign extension popup, rename NotebookLM to Gemini Notebook |
+| v5.0 | Jun 2026 | Add per-site toggle, add z.ai, add Gemini Notebook, add Duck.ai |
 | v4.2 | Jun 2026 | Add Qwen support |
-| v4.1 | Jun 2026 | Add Gemeni, Fix issues |
-| v4.0 | Jun 2026 | Rewrite project using TS, add perplexity |
-| v3.1 | Jun 2026 | Added Claude support |
-| v2.0 | Jan 2026 | Added Deepseek support, improved RTL detection |
-| v1.0 | Initial | Basic ChatGPT support |
+| v4.1 | Jun 2026 | Add Gemini, fix issues |
+| v4.0 | Jun 2026 | Rewrite project using TypeScript, add Perplexity |
+| v3.1 | Jun 2026 | Add Claude support |
+| v2.0 | Jan 2026 | Add DeepSeek support, improve RTL detection |
+| v1.0 | Jan 2026 | Basic ChatGPT support |
 
 ## Roadmap
 

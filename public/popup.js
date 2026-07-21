@@ -6,7 +6,7 @@ const SITES = [
   { name: 'Perplexity', url: 'perplexity.ai', id: 'perplexity', icon: 'platforms/perplexity.png' },
   { name: 'Qwen', url: 'chat.qwen.ai', id: 'qwen', icon: 'platforms/qwen.png' },
   { name: 'z.ai', url: 'chat.z.ai', id: 'zai', icon: 'platforms/zai.png' },
-  { name: 'NotebookLM', url: 'notebooklm.google.com', id: 'notebooklm', icon: 'platforms/notebooklm .png' },
+  { name: 'Gemini Notebook', url: 'notebooklm.google.com', id: 'notebooklm', icon: 'platforms/notebooklm .png' },
   { name: 'Duck.ai', url: 'duck.ai', id: 'duckai', icon: 'platforms/duckai.png' },
   { name: 'Kimi', url: 'kimi.com', id: 'kimi', icon: 'platforms/kimi.png' },
 ];
@@ -24,10 +24,7 @@ async function init() {
     return `
       <div class="site-item">
         ${iconHtml}
-        <div class="site-info">
-          <div class="site-name">${site.name}</div>
-          <div class="site-url">${site.url}</div>
-        </div>
+        <div class="site-name">${site.name}</div>
         <label class="toggle">
           <input type="checkbox" data-site="${site.id}" ${isEnabled ? 'checked' : ''}>
           <span class="slider"></span>
