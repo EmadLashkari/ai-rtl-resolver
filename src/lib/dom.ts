@@ -19,6 +19,27 @@ export function applyDetectedDirection(
   }
 }
 
+export function applyTableDirection(tables: NodeListOf<HTMLTableElement>): void {
+
+  tables.forEach(table => {
+    let text: string = '';
+
+    for (const element of table.querySelectorAll<HTMLTableCellElement>('th, td')) {
+      text += getElementText(element);
+    }
+
+    const TableDirection = detectParagraphDirection(text);
+
+    if (TableDirection === 'rtl')
+      table.querySelectorAll<HTMLTableCellElement>('th, td').forEach((element) => {
+        setElementDirection(element, TableDirection);
+        element.style.textAlign = TableDirection === 'rtl' ? 'right !important' : 'left';
+      });
+  });
+
+}
+
+
 export function forceLtrDirection(elements: NodeListOf<Element>): void {
   for (const element of elements) {
     setElementDirection(element, 'ltr');
