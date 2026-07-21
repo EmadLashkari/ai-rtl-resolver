@@ -5,7 +5,7 @@
 
 # Ai RTL Resolver
 
-A browser extension that fixes text direction for Persian, Arabic, and other RTL languages on ChatGPT, Claude, Deepseek, Gemeni, Qwen, z.ai, and NotebookLM.
+A browser extension that fixes text direction for Persian, Arabic, and other RTL languages on ChatGPT, Claude, Deepseek, Gemeni, Qwen, z.ai, NotebookLM, and Duck.ai.
 
 ![Extension Screenshot](screenshots/promo-marquee.png)
 
@@ -21,6 +21,7 @@ A browser extension that fixes text direction for Persian, Arabic, and other RTL
 | <img src="public/platforms/qwen.png" width="20"> Qwen | [chat.qwen.ai](chat.qwen.ai) |
 | <img src="public/platforms/zai.png" width="20"> z.ai | [chat.z.ai](chat.z.ai) |
 | <img src="public/platforms/notebooklm%20.png" width="20"> NotebookLM | [notebooklm.google.com](notebooklm.google.com) |
+| <img src="public/platforms/duckai.png" width="20"> Duck.ai | [duck.ai](duck.ai) |
 
 ## Table of Contents
 - [Features](#features)
@@ -86,7 +87,7 @@ Source is written in TypeScript under `src/`. The build emits one self-contained
 
 | Version | Date | Changes |
 |---------|------|---------|
-| v5.0 | Current | Add per-site toggle, add z.ai, add NotebookLM |
+| v5.0 | Current | Add per-site toggle, add z.ai, add NotebookLM, add Duck.ai |
 | v4.2 | Jun 2026 | Add Qwen support |
 | v4.1 | Jun 2026 | Add Gemeni, Fix issues |
 | v4.0 | Jun 2026 | Rewrite project using TS, add perplexity |

@@ -7,6 +7,7 @@ const SITES = [
   { name: 'Qwen', url: 'chat.qwen.ai', id: 'qwen', icon: 'platforms/qwen.png' },
   { name: 'z.ai', url: 'chat.z.ai', id: 'zai', icon: 'platforms/zai.png' },
   { name: 'NotebookLM', url: 'notebooklm.google.com', id: 'notebooklm', icon: 'platforms/notebooklm .png' },
+  { name: 'Duck.ai', url: 'duck.ai', id: 'duckai', icon: 'platforms/duckai.png' },
 ];
 
 const container = document.getElementById('sites');
