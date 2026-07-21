@@ -38,7 +38,8 @@
         "https://chat.z.ai/*",
         "https://notebooklm.google.com/*",
         "https://duck.ai/*",
-        "https://chat.duckduckgo.com/*"
+        "https://chat.duckduckgo.com/*",
+        "https://www.kimi.com/*"
         ]
     }
   ],
@@ -92,6 +93,11 @@
     {
       "matches": ["https://duck.ai/*", "https://chat.duckduckgo.com/*"],
       "js": ["duckai.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://www.kimi.com/*"],
+      "js": ["kimi.js"],
       "run_at": "document_end"
     }
   ]

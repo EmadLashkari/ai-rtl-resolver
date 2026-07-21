@@ -8,6 +8,7 @@ const SITES = [
   { name: 'z.ai', url: 'chat.z.ai', id: 'zai', icon: 'platforms/zai.png' },
   { name: 'NotebookLM', url: 'notebooklm.google.com', id: 'notebooklm', icon: 'platforms/notebooklm .png' },
   { name: 'Duck.ai', url: 'duck.ai', id: 'duckai', icon: 'platforms/duckai.png' },
+  { name: 'Kimi', url: 'kimi.com', id: 'kimi', icon: 'platforms/kimi.png' },
 ];
 
 const container = document.getElementById('sites');
